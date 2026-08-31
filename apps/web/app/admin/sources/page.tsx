@@ -1,0 +1,1 @@
+export default function SourcesPage() { return <div><div className="admin-header"><div><span className="eyebrow">RESEARCH</span><h1>Sources</h1><p>Manage trusted sources used by the research and verification engine.</p></div></div><div className="empty-state"><h2>No sources configured</h2><p>Sources will be added before automated news discovery is enabled.</p></div></div>; }
