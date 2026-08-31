@@ -13,7 +13,7 @@ enum VerificationStatus { VERIFIED PARTIALLY_VERIFIED UNVERIFIED CONTRADICTED }
 enum ReviewType { FACT SEO ORIGINALITY QUALITY EDITORIAL }
 enum ReviewStatus { PENDING PASSED FAILED }
 
-author User {
+model User {
   id String @id @default(cuid())
   email String @unique
   name String?
@@ -55,6 +55,7 @@ model Article {
   tags Tag[]
   featuredImage Image? @relation(fields: [featuredImageId], references: [id])
   featuredImageId String? @unique
+  seoData SEOData?
   primaryKeyword String?
   secondaryKeywords String[]
   seoTitle String?
