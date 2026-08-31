@@ -1,0 +1,2 @@
+const categories = ["AI", "Technology", "India", "World", "Business", "Science", "Explainers", "How-To"];
+export default function CategoriesPage() { return <div><div className="admin-header"><div><span className="eyebrow">TAXONOMY</span><h1>Categories</h1><p>Editorial sections used for navigation, URLs and topic authority.</p></div></div><div className="cards">{categories.map(name => <div className="card" key={name}><div className="card-body"><span className="eyebrow">SECTION</span><h3>{name}</h3><p>Ready for articles and topic clusters.</p></div></div>)}</div></div>; }
